@@ -294,9 +294,8 @@
     /* ===== HERO SLIDE ===== */
     .slide.hero {
       align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 52px 30px 30px;
+      padding: 52px 30px 20px;
       background: var(--bg);
     }
     .hero .logo {
@@ -433,7 +432,6 @@
       height: 240px;
       object-fit: contain;
       border-radius: 16px;
-      margin-top: auto;
       margin-bottom: 24px;
     }
     .final .f-tag {
@@ -464,7 +462,19 @@
       max-width: 280px;
     }
     .final .brand {
+      margin-top: 12px;
+    }
+    .final .disclaimer {
       margin-top: auto;
+    }
+    /* ===== DISCLAIMER ===== */
+    .disclaimer {
+      font-size: 13px;
+      color: var(--t2);
+      text-align: center;
+      line-height: 1.55;
+      max-width: 300px;
+      margin: 0 auto 6px;
     }
 
     /* ===== NAV ZONES ===== */
@@ -532,6 +542,7 @@
     .slide.final .f-tag,
     .slide.final .f-title,
     .slide.final .f-sub,
+    .slide.final .disclaimer,
     .slide.final .brand {
       opacity: 0;
       transform: translateY(10px);
@@ -540,7 +551,8 @@
     .slide.final.visible .f-tag { animation: fadeUp .5s var(--ease) .3s forwards; }
     .slide.final.visible .f-title { animation: fadeUp .5s var(--ease) .4s forwards; }
     .slide.final.visible .f-sub { animation: fadeUp .5s var(--ease) .5s forwards; }
-    .slide.final.visible .brand { animation: fadeUp .4s var(--ease) .6s forwards; }
+    .slide.final.visible .disclaimer { animation: fadeUp .4s var(--ease) .6s forwards; }
+    .slide.final.visible .brand { animation: fadeUp .4s var(--ease) .7s forwards; }
   </style>
 </head>
 <body>
@@ -558,6 +570,7 @@
 
     <!-- ====== SLIDE 1 / HERO — Лояльность ====== -->
     <section class="slide hero">
+      <div style="flex:1"></div>
       <div class="logo">N ‑ S Y S T E M S</div>
       <div class="ring">
         <div class="big">HR</div>
@@ -565,6 +578,7 @@
       </div>
       <div class="t1">Лояльность и состояние<br>сотрудников</div>
       <div class="t2">Мониторинг · Профилактика · Устойчивость</div>
+      <div class="disclaimer" style="margin-top:auto">Модель рассчитана на штатный режим работы компании</div>
       <div class="brand">N‑SYSTEMS</div>
     </section>
 
@@ -858,6 +872,7 @@
       <div class="f-tag">всегда на связи</div>
       <div class="f-title">Всё под контролем</div>
       <div class="f-sub">Системный подход к управлению персоналом</div>
+      <div class="disclaimer">Модель рассчитана на штатный режим. В случае кризиса логика работы и критерии оценки корректируются отдельно.</div>
       <div class="brand">N‑SYSTEMS · KPI 2026</div>
     </section>
 
